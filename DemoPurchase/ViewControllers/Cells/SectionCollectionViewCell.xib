@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectionListCell" id="gTV-IL-0wX" customClass="SectionCollectionViewCell" customModule="DemoPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRI-sd-Hqq">
+                        <rect key="frame" x="5" y="5" width="290" height="93"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWt-Rh-9sb">
+                        <rect key="frame" x="5" y="102" width="145" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="tAm-fr-YdS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="pRI-sd-Hqq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="0e6-HM-ECV"/>
+                <constraint firstAttribute="bottom" secondItem="HWt-Rh-9sb" secondAttribute="bottom" id="8qU-0l-onf"/>
+                <constraint firstItem="HWt-Rh-9sb" firstAttribute="width" secondItem="pRI-sd-Hqq" secondAttribute="width" multiplier="1:2" id="IS4-Fu-nXq"/>
+                <constraint firstItem="pRI-sd-Hqq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="KLp-vR-TwD"/>
+                <constraint firstAttribute="bottom" secondItem="pRI-sd-Hqq" secondAttribute="bottom" constant="5" id="OZP-a9-Mng"/>
+                <constraint firstItem="HWt-Rh-9sb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="WjI-zd-1pm"/>
+                <constraint firstAttribute="trailing" secondItem="pRI-sd-Hqq" secondAttribute="trailing" constant="5" id="oN9-2I-FO3"/>
+            </constraints>
+            <size key="customSize" width="300" height="103"/>
+            <connections>
+                <outlet property="bottomViewLine" destination="HWt-Rh-9sb" id="wpa-PK-oJJ"/>
+                <outlet property="llblSection" destination="pRI-sd-Hqq" id="3nh-Pg-LiG"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="171.09375"/>
+        </collectionViewCell>
+    </objects>
+</document>
